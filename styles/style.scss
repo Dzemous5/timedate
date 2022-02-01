@@ -1,0 +1,71 @@
+@import "./animations/animations";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(159,159,159);
+    background: linear-gradient(90deg, rgba(159,159,159,1) 0%, rgba(237,237,237,1) 100%);
+}
+
+#box-time, #box-date{
+    margin: 1rem;
+    background-color: #fff;
+    height: 8rem;
+    border-radius: 1rem 0 0 1rem;
+    display: flex;
+    flex-direction: row;
+    animation-name: przezroczystosc;
+    animation-duration: 3s;
+}
+
+.box-left{
+    width: 100px;
+    height: 100%;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.box-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: col;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.box-right>div{
+    display: flex;
+    flex-direction: col;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 1rem 0 1rem;
+    font-size: 2em;
+    border-radius: 1rem;
+}
+
+.box-right>p{
+    font-size: 3rem;
+}
